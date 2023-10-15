@@ -1,0 +1,48 @@
+<div class="container mt-5">
+    <div class="rounded p-4 border" style="background-color:whitesmoke;">
+      <form>
+        <div class="mb-3">
+          <label for="comptuerName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="comptuerName" [(ngModel)]="name">
+        </div>
+  
+        <div class="mb-3">
+          <label for="comptuerDescription" class="form-label">Description</label>
+          <input type="text" class="form-control" id="comptuerDescription" [(ngModel)]="description">
+        </div>
+  
+        <div class="mb-3">
+          <label for="startDateTime" class="form-label">Start Date and Time</label>
+          <input [(ngModel)]="startDateTime" type="datetime-local" min="2023-01-01T00:00" max="2099-12-31T00:00" class="form-control" name="startDateTime" id="startDateTime" required />
+        </div>
+  
+        <div class="mb-3">
+          <label for="durationInMinutes" class="form-label">Duration in Minutes</label>
+          <input [(ngModel)]="durationInMinutes" type="number" name="durationInMinutes" class="form-control" id="durationInMinutes" required />
+        </div>
+  
+        <div class="mb-3 form-check">
+          <input [(ngModel)]="status" type="checkbox" name="status" class="form-check-input" id="status" value="yes" />
+          <label class="form-check-label" for="status">Is Active</label>
+        </div>
+  
+        <div class="mb-3">
+          <label for="capacity" class="form-label">Capacity</label>
+          <input [(ngModel)]="capacity" type="number" name="capacity" class="form-control" id="capacity" placeholder="Event capacity" />
+        </div>
+  
+        <div class="mb-3">
+          <label for="tickets" class="form-label">Tickets</label>
+          <input [(ngModel)]="tickets" type="number" name="tickets" class="form-control" id="tickets" placeholder="Tickets Available (optional)" />
+        </div>
+  
+        <div class="mb-3">
+          <label for="categories" class="form-label">Category</label>
+          <input type="text" name="categories" class="form-control" id="categories" placeholder="Enter category Id" required />
+        </div>
+  
+        <button type="button" class="btn btn-primary" (click)="onSaveEvent()">Submit</button>
+      </form>
+    </div>
+  </div>
+  

@@ -1,0 +1,55 @@
+<div class="container m-5">
+    <div class="container" *ngIf="[theEvent]">
+      <p style="text-align: center; padding-top: 20px; font-size: 120px;">{{ theEvent.name }}</p>
+      <img [src]="theEvent.image" style="width: 80vw; height: 20vw; padding-left:100px;">
+      <h5>Event Id</h5>
+      <p>{{ theEvent.eventId }}</p>
+      <h5>Name</h5>
+      <p>{{ theEvent.name }}</p>
+      <h5>Description</h5>
+      <p>{{ theEvent.description }}</p>
+      <h5>Start Date Time</h5>
+      <p>{{ theEvent.startDateTime }}</p>
+      <h5>End Date Time</h5>
+      <p>{{ theEvent.endDateTime }}</p>
+      <h5>Duration</h5>
+      <p>{{ theEvent.durationInMinutes | formatTime }}</p>
+      <h5>Is Active</h5>
+      <p>{{ theEvent.status }}</p>
+      <h5>Capacity</h5>
+      <p>{{ theEvent.capacity }}</p>
+      <h5>Tickets Available</h5>
+      <p>{{ theEvent.tickets }}</p>
+      <h5>Category Id</h5>
+      <p>{{ theEvent.category_id }}</p>
+    </div>
+  </div>
+  
+  <div class="row row-cols-1 g-3">
+    <div class="col">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Category Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Image</th>
+            <th scope="col">Created Date</th>
+          </tr>
+        </thead>
+        <!-- <tbody>
+          <tr *ngFor="let category of categories">
+            <th scope="row">{{ category.id }}</th>
+            <td>{{ category.name }}</td>
+            <td>{{ category.description }}</td>
+            <td>{{ category.image }}</td>
+            <td>{{ category.createdAt }}</td>
+            <td>
+              <a type="button" class="btn btn-primary" [routerLink]="'/andy/event/show-category/' + category.id">View</a>
+            </td>
+          </tr>
+        </tbody> -->
+      </table>
+    </div>
+  </div>
+  

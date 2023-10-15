@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="section">
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead class="thead-dark">
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Start Date</th>
+              <th>End Date</th>
+              <th>Duration</th>
+              <th>Status</th>
+              <th>Capacity</th>
+              <th>Tickets</th>
+              <th>ID</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of eventsDB">
+              <td>{{ item.name }}</td>
+              <td>{{ item.description }}</td>
+              <td>{{ item.startDateTime | date: 'short' }}</td>
+              <td>{{ item.endDateTime | date: 'short' }}</td>
+              <td>{{ item.durationInMinutes | formatTime }}</td>
+              <td>{{ item.status }}</td>
+              <td>{{ item.capacity }}</td>
+              <td>{{ item.tickets }}</td>
+              <td>{{ item.id }}</td>
+              <td><button type="submit" class="btn btn-primary" style="background-color:dodgerblue; border-color: midnightblue;" (click)="onGetEvent(item)">View</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
