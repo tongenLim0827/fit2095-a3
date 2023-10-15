@@ -1,0 +1,51 @@
+<html>
+	<body style="background-image: url('assets/images/background.png'); background-size: cover;">
+		<div class="container m-5">
+			<img src="assets/images/page_header.jpg" style="width: 1200px; height: 300px; padding-left:60px;">
+			<br>
+		</div>
+		
+		<style>
+			.box {
+				width: 18%;
+				padding: 80px; 
+				border: 2px solid #333;
+				display: inline-block;
+				vertical-align: top;
+				margin: 10px;
+				padding: 10px;
+				text-align: center;
+			}
+		</style>
+
+		<div class="container m-3">
+			<h5 style="text-align: center;">
+				Tasks Group 1 (student#1 Lim Tong En 32905165)
+			</h5>
+			<h2 style="text-align: center;">
+				<a type="button" style="background-color: rgb(127, 189, 230); border-color: rgb(127, 189, 230); margin-right: 10px; color: white;" class="btn btn-primary" routerLink="/event-category/32905165/add-category">Add Category</a>
+				<a type="button" style="background-color: rgb(127, 189, 230); border-color: rgb(127, 189, 230); margin-right: 10px; color: white;" class="btn btn-primary" routerLink="/event-category/32905165/list-categories">List Categories</a>
+				<a type="button" style="background-color: rgb(127, 189, 230); border-color: rgb(127, 189, 230); margin-right: 10px; color: white;" class="btn btn-primary" routerLink="/event-category/32905165/delete-category-byId">Delete Category</a>
+				<a type="button" style="background-color: rgb(127, 189, 230); border-color: rgb(127, 189, 230); margin-right: 10px; color: white;" class="btn btn-primary" routerLink="/event-category/32905165/update-category">Update Category</a>
+				<a type="button" style="background-color: rgb(127, 189, 230); border-color: rgb(127, 189, 230); margin-right: 10px; color: white;" class="btn btn-primary" routerLink="/event-category/32905165/text-to-speech">Text to Speech</a>
+				<a type="button" style="background-color: rgb(127, 189, 230); border-color: rgb(127, 189, 230); margin-right: 10px; color: white;" class="btn btn-primary" routerLink="/event-category/32905165/stats">Stats G1</a>
+
+			</h2>
+
+			<br> 
+
+			<h5 style="text-align: center;">
+				Tasks Group 2 (student#2 Andy Ly 33119902)
+			</h5>
+			<h2 style="text-align: center;">
+				<a type="button" style="background-color: rgb(127, 189, 230); border-color: rgb(127, 189, 230); margin-right: 10px; color: white;" class="btn btn-primary;" routerLink="event-category/andy/add-event">Add Event</a>
+        		<a type="button" style="background-color: rgb(127, 189, 230); border-color: rgb(127, 189, 230); margin-right: 10px; color: white;" class="btn btn-primary;" routerLink="event-category/andy/list-events">List all events</a>
+				<a type="button" style="background-color: rgb(127, 189, 230); border-color: rgb(127, 189, 230); margin-right: 10px; color: white;" class="btn btn-primary;" routerLink="andy/event/sold-out">List Sold Out Events</a>
+				<a type="button" style="background-color: rgb(127, 189, 230); border-color: rgb(127, 189, 230); margin-right: 10px; color: white;" class="btn btn-primary;" routerLink='/andy/event/show-category/:id'>Category Detail Page</a>
+				<a type="button" style="background-color: rgb(127, 189, 230); border-color: rgb(127, 189, 230); margin-right: 10px; color: white;" class="btn btn-primary;" routerLink="event-category/andy/delete-events-byId">Delete Event by Id</a>
+			</h2>
+			<br>
+		</div>		
+	</body>
+	<router-outlet></router-outlet>
+</html>

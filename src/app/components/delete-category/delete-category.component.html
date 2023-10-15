@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+    <head>
+        <title>Category List</title>
+    </head> 
+
+    <body>
+        <div class="album py-1">
+            <div class="container">
+                <h3 class="my-2" style="text-align:center">Category List</h3>
+                <div class="col">
+                    <table class="table table-hover">
+                        <tr style="text-align:center">
+                            <th scope="col">Id</th>
+                            <th scope="col">Category Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Created Date</th>
+                            <th scope="col">Number of Events</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    
+                        <tbody>
+
+                        <tr *ngIf="categories.length == 0">
+                            <th scope="row" colspan="8" class="text-center text-bold">No records found</th>
+                        </tr>
+
+                        <tr *ngFor="let category of categories">
+                            <th scope="row">
+                                {{category.id}}
+                            </th>
+                            <td>
+                                {{category.name | uppercase}}
+                            </td>
+                            <td>
+                                {{category.description }}
+                            </td>
+                            <td>
+                                {{category.image}}
+                                <br>
+                                <img src = "../assets/images/{{category.image}}" style="width: 200px; height: 150px;">
+                            </td>
+                            <td>
+                                {{formmatedDateString}}
+                            </td>
+                            <td>
+                                {{category.eventsList.length }}
+                            </td>
+                            <a class="btn btn-primary" (click)="deleteCategory(category.id)" style="background-color: rgb(238, 42, 42); color: white; border: 2px solid red;">Delete</a>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

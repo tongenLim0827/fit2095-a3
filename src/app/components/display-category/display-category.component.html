@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+    <head>
+        <title>Event Details</title>
+    </head>
+    
+    <body style="background-image: url('background.png'); background-size: cover;">
+        <div class="container m-5">
+            <div *ngIf="events.length == 0; else isNull">
+                <div class="container">
+                    <img src="../assets/images/{{category.image}}" style="width: 90vw; height: 20vw; padding-right: 80px; padding-top:30px">
+                </div>
+                <p style="text-align: center; padding-top: 20px; font-size: 120px;">{{category.name | uppercase}}</p>
+                
+                <h5>Category Id</h5>
+                <p>{{category.id}}</p>
+                <h5>Name</h5>
+                <p>{{category.name | uppercase}}</p>
+                <h5>Description</h5>
+                <p>{{category.description}}</p>
+                <h5>Created Date Time</h5>
+                <p>{{formmatedDateString}}</p>
+
+                <div class="album py-1">
+                    <div class="container">
+                        <h3 class="my-2" style="text-align: center">Event List</h3>
+                        <div class="col">
+                            <table class="table table-hover">
+                                <tr style="text-align: center">
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Event Name</th>
+                                    <th scope="col">Start</th>
+                                    <th scope="col">End</th>
+                                    <th scope="col">Duration</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Capacity</th>
+                                    <th scope="col">Tickets</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                                
+                                <tbody>
+                                    <tr *ngIf="events.length == 0">
+                                        <th scope="row" colspan="8" class="text-center text-bold">No events found</th>
+                                    </tr>
+
+                                    <tr *ngFor="let event of events">
+                                        <th scope="row">
+                                            {{event.id}}
+                                        </th>
+                                        <td>{{event.name | uppercase}}</td>
+                                        <td>{{event.startDateTime}}</td>
+                                        <td>{{event.endDateTime}}</td>
+                                        <td>{{event.durationInMinutes}}</td>
+                                        <td>{{event.status}}</td>
+                                        <td>{{event.capacity}}</td>
+                                        <td>{{event.tickets}}</td>
+                                        <td> 
+                                            <a type="button" class="btn btn-primary" href="/">View</a>
+                                        </td>                               
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ng-template #isNull>
+                <p>Category Id does not exist.</p>
+            </ng-template>	
+        </div>
+    </body>
+</html>

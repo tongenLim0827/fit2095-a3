@@ -1,0 +1,43 @@
+<html lang="en" data-bs-theme="auto">
+    <head>
+        <title>Add Category Page</title>
+    </head>
+
+    <body>
+        <main style="padding-bottom: 30px; padding-top: 30px;"> 
+            <div class="container m-5" style="background-color:rgb(167, 203, 240); padding-bottom: 30px;">
+                <h3 class="my-1"  style="text-align: center;  padding-top:20px">Text To Speech</h3>	
+                <div class="container mt-5" style="padding-left:450px; padding-bottom: 20px;">	
+                    <div class="row row-cols-1 row-cols-sm-2 g-3">
+                        <div class="col" >
+                            <div class="row justify-content-center">
+                                <!-- controls the width of the card -->
+                                <div class="col-md-12"> 
+                                    <div class="card shadow-sm" >
+                                        <div class="card-body" >
+                                            <div class="mb-3">
+                                                <label for="nameInput" class="form-label">Text To Convert</label>
+                                                <input type="text" [(ngModel)]="textToConvert" class="form-control" id="textToConvert" placeholder="Enter category name">
+                                            </div>
+                                            <br>
+                                            <div *ngIf="convertSuccess">
+                                                <p>Converted text to speech</p>
+                                                <audio controls>
+                                                    <source src="output.mp3" type="audio/mpeg">
+                                                </audio>
+                                            </div>
+                                            <br>
+                                            <div>
+                                                <button type="submit" (click)="convertText()">Convert to Speech</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </main> 
+    </body>
+</html>
