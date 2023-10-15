@@ -92,6 +92,7 @@ export class DatabaseService {
   getEvents() {
     return this.http.get("/event/");
   }
+  
   createEvent(data: object) {
     return this.http.post("/event", data, httpOptions);
   }
