@@ -1,0 +1,97 @@
+{
+  "configVersion": 1,
+  "timestamp": 1746180149645,
+  "index": "/fit2095-a3/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/fit2095-a3/favicon.ico",
+        "/fit2095-a3/index.html",
+        "/fit2095-a3/main.68362e09cdbe1b1c.js",
+        "/fit2095-a3/manifest.webmanifest",
+        "/fit2095-a3/polyfills.cf17c37214da5508.js",
+        "/fit2095-a3/runtime.37864f61ea23da80.js",
+        "/fit2095-a3/styles.0eec13037c57ff73.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/fit2095-a3/assets/icons/icon-128x128.png",
+        "/fit2095-a3/assets/icons/icon-144x144.png",
+        "/fit2095-a3/assets/icons/icon-152x152.png",
+        "/fit2095-a3/assets/icons/icon-192x192.png",
+        "/fit2095-a3/assets/icons/icon-384x384.png",
+        "/fit2095-a3/assets/icons/icon-512x512.png",
+        "/fit2095-a3/assets/icons/icon-72x72.png",
+        "/fit2095-a3/assets/icons/icon-96x96.png",
+        "/fit2095-a3/assets/images/404.jpg",
+        "/fit2095-a3/assets/images/background.png",
+        "/fit2095-a3/assets/images/blue_penguin.jpg",
+        "/fit2095-a3/assets/images/default_category.png",
+        "/fit2095-a3/assets/images/default_event.png",
+        "/fit2095-a3/assets/images/develop_by_team.png",
+        "/fit2095-a3/assets/images/page_header.jpg",
+        "/fit2095-a3/assets/images/team_name.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/fit2095-a3/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "/fit2095-a3/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "/fit2095-a3/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "/fit2095-a3/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "/fit2095-a3/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/fit2095-a3/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/fit2095-a3/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "/fit2095-a3/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/fit2095-a3/assets/images/404.jpg": "82dd8e7a902d9461cb7ded31839d4bf5e7d869fd",
+    "/fit2095-a3/assets/images/background.png": "af2c6826f758de4dc0ce1342f3767afc5f847910",
+    "/fit2095-a3/assets/images/blue_penguin.jpg": "a4f0efea079a489b16ccaa6fab7f9277e15bad73",
+    "/fit2095-a3/assets/images/default_category.png": "0f807ba5814b9b7d7e86852ad582b27a03579d69",
+    "/fit2095-a3/assets/images/default_event.png": "2cf924776343818d955f37280e638b7ed68bf850",
+    "/fit2095-a3/assets/images/develop_by_team.png": "a073f285f5f5028e8577ee99e82d6214ce9f31b4",
+    "/fit2095-a3/assets/images/page_header.jpg": "d40b0c2b82f09d7403a0c90c181a7eaba30600e0",
+    "/fit2095-a3/assets/images/team_name.jpg": "ce1f63ed5564c1367b8e690b74b58f1dac44c9a8",
+    "/fit2095-a3/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/fit2095-a3/index.html": "45a3815e0f4c4a081152f4e271f4f5328921d2f8",
+    "/fit2095-a3/main.68362e09cdbe1b1c.js": "de2a6ca9d03b005725a28274a78a524c59cd1b5a",
+    "/fit2095-a3/manifest.webmanifest": "90fa5d4c7a9bc2bc89db5525b73e0f55e8e97f86",
+    "/fit2095-a3/polyfills.cf17c37214da5508.js": "5baec22a67b6f3a25e6ad19847b2a52e382c5e0c",
+    "/fit2095-a3/runtime.37864f61ea23da80.js": "3a3108f1870be4db207857ee14839a7f49685783",
+    "/fit2095-a3/styles.0eec13037c57ff73.css": "30d5d6764d7516b68b07073ef394c1fd89f798ff"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
